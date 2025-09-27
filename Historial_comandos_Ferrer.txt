@@ -1,0 +1,322 @@
+pwd
+whoami
+who
+w
+ls
+ls -l
+ls -la
+echo hola
+echo $HOME
+mkdir clase4
+ls -l
+cd clase4
+pws
+cd ..
+echo linea1
+echo linea1 > archivo1.txt
+ls -l
+cd clase4
+echo linea1
+echo linea1 > archivo1.txt
+ls -l
+cat archivo1.txt
+cat > archivo2.txt
+ls -l
+cat archivo2.txt
+cat *.txt
+cat archivo1.txt
+cat archivo1.txt > archivo3.txt
+ls -l
+cat archivo3.txt
+archivo1.txt >> archivo2.txt
+cat archivo1.txt >> archivo2.txt
+cat archivo2.txt
+cat archivo1.txt archivo2.txt > archivo4.txt
+ls -l
+cat archivo4.txt
+grep linea2 archivo4.txt
+grep linea1 archivo.txt
+grep linea1 archivo4.txt
+grep -n linea1 archivo4.txt
+c ..
+cd ..
+pwd
+ssh-keygen -t ed25519
+ls -l
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub
+pwd
+cd $HOME
+pwd
+tree
+apt install tree
+sudo apt install tree
+tree
+sudo snap install tree
+tree
+ls -l
+cd clase4
+mkdir practica
+cd practica
+ls -l
+touch practica1.txt
+ls -l
+cat practica1.txt
+cp practrica1.txt practica2.txt
+cp practica1.txt practica2.txt
+rm practica1.txt
+ls -l
+mv practica2.txt /home/vagrant/clase4
+ls -l
+cd ..
+rmdir practica
+ls -l
+id
+mkdir dir1 dir2 dir3
+ls -l
+tree
+mkdir -p dir1/dir2/dir3
+ls -l
+tree
+exit
+mkdir clase_
+pwd
+ls -l
+cd clase4
+tree
+mkdir facturas pedidos 
+tree
+mkdir -p cliente/{facturas,pedidos}
+tree
+mkdir -p {clientes,provedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,provedores}/{facturas,pedidos}
+tree
+mkdir -p ferrer/contactos/{clientes,provedores}
+tree
+mkdir -p ferrer2/{mama,papa}/{hijo1,hijo2,hijo3}/papa/ahijado
+tree
+rm ferrer2
+tree
+rm -r ferrer2
+tree
+mkdir -p ferrer2/{mama/hijo{1..3},papa/{hijo{1..3}ahijado}}
+tree
+mkdir -p ferrer2/{mama/hijo{1..3},papa/{hijo{1..3}/ahijado}}
+tree
+mkdir -p ferrer2/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+tree
+mkdir -p ferrer2/{mama/hijo{1..3}},{papa/{hijo{1..3}/ahijado}
+tree
+mkdir -p ferrer2/{mama/hijo{1..3},papa/{hijo{1..3}/ahijado}
+tree
+mkdir -p ferrer2/{mama/hijo{1..3},papa/hijo{1..3}/ahijado}
+tree
+mkdir -p ferrer2/{mama/hijo{1..3},papa/hijo{1..3}ahijado}
+tree
+rm -r ferrer2
+tree
+clear
+whoami
+id
+grep -i vagrant /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo grep vagrant /etc/shadow
+cat /etc/group
+grep vagrant /etc/group
+sudo su
+sudo groupadd Alumnos
+useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+sudo useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+cat /etc/group
+cat /etc/passwd
+ls -l /home
+sudo passwd pepe
+sudo cat /etc/shadow
+su pepe
+su - pepe
+sudo ls -l /home/pepe
+su - pepe
+sudo usermod -aG sudo [pepe]
+ls -l
+cd
+sudo ls -l /home/pepe
+sudo chown vagrant:vagrant /home/pepe/pepe.txt
+sudo ls -l /home/pepe
+mkdir clase5
+cd clase5
+ls -l
+touch practica1.txt
+touch practica2.txt
+ls -l
+chmod 600 practica1.txt
+ls -l
+chmod 444 practica2.txt
+ls -l
+chmod 777 practica2.txt
+ls -l
+cd ..
+pwd
+ls -l
+cd repogit
+ls -l
+git clone git@github.com:franferrer123/TP_AySO_Ferrer_Francisco.git
+ls -l
+cd ..
+vagrant hall
+exit
+ls -l
+cd repogit
+ls -l
+cd ..
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub
+cd ..
+ls -l
+cd repogit
+pwd
+cd t
+ls -l
+ls - la
+ls -la
+git@github.com:franferrer123/TP_AySO_Ferrer_Francisco.git
+git clone git@github.com:franferrer123/TP_AySO_Ferrer_Francisco.git
+cd TP_AySO_Ferrer_Francisco
+pwd
+ls -l
+cat /etc/os-release
+grep /etc/HOME_URL
+ls -l
+cat /etc/os-release
+ls -
+ls -l
+cd repogit
+ls -l
+cd TP_AySO_Ferrer_Francisco
+ls -l
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+pwd
+git add
+ls
+git add .
+git config --global using.email "franferrer75500@gmail.com"
+git config --global using.name "franferrer123"
+git commit -m "ADD: Agregado 1mer ejercicio sobre datos_usuarios.txt"  
+git config --global user.email "franferrer75500@gmail.com"
+git config --global user.name "franferrer123"
+git config --global --list
+git commit -m "ADD: Agregado 1mer ejercicio sobre datos_usuarios.txt"  
+git status
+git push
+grep
+tail -1n
+tail -n1
+tail -n1pdedee
+f
+ls -l
+cd repogit
+ls -l
+cd TP_AySO_Ferrer_Francisco
+ls -l
+cat /etc/datos_usuario.txt
+grep
+tail -n1
+ls -l
+cd repogit
+pwd
+ls -l
+cd TP_AySO_Ferrer_Francisco
+ls -l
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: añadiendo informacion de CPU"
+git push
+cat <<EOF > README.md
+Alumno: FranciscoFerrer
+Division: 113
+Turno: Mañana
+EOF
+
+cat README.md
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y Datos de usuario"
+git push
+makdir -p ~/material1/unidad{1...3} ~/material2/unidad{1..3}
+mkdir -p ~/material1/unidad{1...3} ~/material2/unidad{1..3}
+ls -R ~
+exit
+ls -l
+cd repogit
+ls -l
+cd ..
+pwd
+mkdir clase6
+ls -l
+cd clase6
+cat
+cd clase6
+touch practica.txt
+ls -l
+echo ls -l > script1
+ls -l
+ls -l script1
+bash script1
+cat script1
+vim script2.sh
+ls -l
+cat script2.sh
+chmod 775 script2.sh
+ls -l
+./script2.sh
+vim script2.sh 
+./script2.sh
+cd ..
+history -a
+cd clase6
+history > historial_comandos_ferrer.txt
+tree /home/vagrant
+cat /etc/passwd | grep bash  
+cd ..
+exit
+pwd
+ls -l
+cd repogit
+ls -l
+cd TP_AySO_Ferrer_Francisco
+ls -l
+cd ..
+$HOME
+pwd
+cd ..
+nano script-dir.sh
+touch script_dir.sh
+vim script_dir.sh
+chmod +x script_dir.sh
+git add script_dir.sh
+git commit -m "ADD: añadiendo script"
+cd repogit
+cd TP_AySO_Ferrer_Francisco
+mv ~/script_dir.sh
+git add sript_dir.sh
+git add script_dir.sh
+ls -la
+mv ~/script_dir.sh ~/repogit/TP_AySO_Ferrer_Francisco/
+git add script_dir.sh
+git commit -m "ADD: añadiendo script_dir.sh"
+git push
+cd ~/repogit/TP_AySO_Ferrer_Francisco
+cd ..
+ls -la
+cd TP_AySO_Ferrer_Francisco
+cp ~/.bash_history ./Historial_comandos_Ferrer.txt
+history -a
